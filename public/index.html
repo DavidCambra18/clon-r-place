@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>r/place Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="toolbar">
+    <input type="color" id="colorPicker" value="#ff0000" />
+    <label for="brushSize">Tamaño pincel:</label>
+    <input type="number" id="brushSize" value="1" min="1" max="5" />
+    <span>Rueda = zoom · Derecho + arrastrar = mover · Izquierdo = pintar</span>
+  </div>
+  <div class="canvas-wrapper">
+    <canvas id="pixelCanvas" width="1000" height="1000"></canvas>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

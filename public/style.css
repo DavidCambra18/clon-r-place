@@ -1,0 +1,46 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: sans-serif;
+}
+
+#toolbar {
+    height: 50px;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    gap: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#toolbar input[type="number"] {
+    width: 60px;
+}
+
+.canvas-wrapper {
+    width: 100%;
+    height: calc(100vh - 50px);
+    overflow: auto;
+    border: 1px solid #333;
+    cursor: default;
+}
+
+#pixelCanvas {
+    display: block;
+    user-select: none;
+    background: #f9f9f9;
+    image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}

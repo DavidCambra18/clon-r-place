@@ -29,5 +29,5 @@ Un clon de la aplicación web [r/place](https://www.reddit.com/r/place/) constru
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/rplace-clone.git
+   git clone https://github.com/DavidCambra18/rplace-clone.git
    cd rplace-clone
